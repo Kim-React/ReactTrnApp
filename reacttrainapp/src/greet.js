@@ -2,4 +2,4 @@
 //     return (<div>welcome to react functional component</div>)
 // }
 
-export const Greet = () => <h1>Hello Arrow functions.</h1>
+export const Greet = (prop) => <h1>Hellow {prop.name}.</h1>

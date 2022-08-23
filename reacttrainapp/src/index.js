@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import TileList  from './TileList';
 import reportWebVitals from './reportWebVitals';
+import { Tiles } from './Tiles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TileList />
+    <Tiles />
   </React.StrictMode>
 );
 

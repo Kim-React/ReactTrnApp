@@ -9,7 +9,10 @@ function App() {
         <p>
           React rocks front end web develoment
         </p>
-        <Greet/>
+        <Greet name="john"/>
+        <Greet name="kevin"/>
+        <Greet name="bob"/>
+        <Greet name="david"/>
       </header>
     </div>
   );

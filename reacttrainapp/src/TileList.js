@@ -13,20 +13,31 @@ class TileList extends React.Component{
       }
       
     render(){
-        return (<div> 
-            {this.state.tiles.map((tile,index)=> {
-           return (
-              <tr key={index}>
-              <td>{tile.name}</td>  
-              <td>{tile.model}</td>
-              <td>{tile.price}</td>
-              <td>{tile.rating}</td>
-              <td>{tile.status}</td>
-              </tr>
-            );
-          })}
-
-       </div>);
+        return (
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>name</td>
+                            <td>model</td>
+                            <td>price</td>
+                        </tr>
+                    </thead>
+                {this.state.tiles.map((tile,index) => {
+                
+                return (
+                 <tr key={index}>
+                  <td>{tile.name}</td>
+                 <td>{tile.model}</td>
+                 <td>{tile.price}</td>
+                </tr>)
+                        
+          })
+        }
+           </table>
+            </div>
+        )
+    
     }
 
 }

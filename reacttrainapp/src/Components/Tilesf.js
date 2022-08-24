@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState,useRef } from 'react'
 
 export default function Tilesf() {
 
- 
+    const nameRef = useRef();
+    const modelRef = useRef();
+    const priceRef = useRef();
  const  initialTiles =[
         {"name":"somany","model":"nit-01","price":200},
         {"name":"johnson","model":"nit-02","price":100},
@@ -11,8 +13,25 @@ export default function Tilesf() {
       ]
       const [tiles,setTiles] = useState(initialTiles);
 
-      
+      function addTile(e){
+        e.preventDefault();
+        const tile = {
+            name:nameRef.current.value,
+            model:modelRef.current.value,
+            price:modelRef.current.value
+        }
+        setTiles([...tiles,tile]);
+      }
   return (
+<>
+    <div>
+        <form onSubmit={addTile}>
+        <div> Name:   <input type="text" ref={nameRef} /> </div>
+        <div> Model:   <input type="text" ref={modelRef} /></div>
+        <div> Price:   <input type="text" ref={priceRef} /></div>
+        <div> <button >Add Tile</button> </div>
+        </form>
+    </div>
     <div>
             <table>
                 <thead>
@@ -22,6 +41,7 @@ export default function Tilesf() {
                         <td>price</td>
                     </tr>
                 </thead>
+                <tbody>
             {tiles.map((tile,index) => {
             
             return (
@@ -29,12 +49,15 @@ export default function Tilesf() {
               <td>{tile.name}</td>
              <td>{tile.model}</td>
              <td>{tile.price}</td>
-            </tr>)
-                    
+            </tr>
+           
+            )
       }    
       )
     }
+     </tbody>
        </table>
     </div>
+    </>
   )
 }

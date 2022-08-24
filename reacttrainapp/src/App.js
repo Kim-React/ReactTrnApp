@@ -1,18 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import { Greet } from './greet';
+import { Greet } from './Components/greet';
 import Welcome from './Welcome';
-import Message from './Message';
+//import Message from './Components/Message';
 import { Counter } from './Components/Counter';
+import HookCounter from './Components/HookCounter';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter incrementValue="5"/>
-        <Counter incrementValue="10"/>
-        <Counter incrementValue="15"/>
-        <Counter incrementValue="20"/>
+      <HookCounter/>
       </header>
     </div>
   );

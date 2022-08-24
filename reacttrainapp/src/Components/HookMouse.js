@@ -13,7 +13,7 @@ function HookMouse() {
     useEffect(()=>{
         window.addEventListener('mousemove',logMousePosition);
         console.log('useEffectCalled')
-    },[])
+    })
 
   return (
     <div>Mouse Position

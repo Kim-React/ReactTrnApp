@@ -5,12 +5,13 @@ import Welcome from './Welcome';
 //import Message from './Components/Message';
 import { Counter } from './Components/Counter';
 import HookCounterTwo from './Components/HookCounterTwo';
+import User from './Components/User';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <HookCounterTwo/>
+      <User />
       </header>
     </div>
   );

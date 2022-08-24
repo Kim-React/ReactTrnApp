@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Greet } from './greet';
 import Welcome from './Welcome';
+import Message from './Message';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <p>
           React rocks front end web develoment
         </p>
-        <Greet name="john" >
+        <Message />
+        {/* <Greet name="john" >
          <p> I am child of Greet component</p>
           </Greet>
         <Greet name="kevin">
@@ -19,7 +21,7 @@ function App() {
         <Greet name="bob"/>
         <Greet name="david"/>
         <Welcome name="Modi"></Welcome>
-        <Welcome name="Rahul"></Welcome>
+        <Welcome name="Rahul"></Welcome> */}
       </header>
     </div>
   );

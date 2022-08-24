@@ -2,4 +2,7 @@
 //     return (<div>welcome to react functional component</div>)
 // }
 
-export const Greet = (prop) => <h1>Hellow {prop.name}.</h1>
+
+export const Greet = (prop) => <div>Hellow {prop.name}.
+<div>{prop.children}</div>
+</div>

@@ -4,13 +4,13 @@ import { Greet } from './Components/greet';
 import Welcome from './Welcome';
 //import Message from './Components/Message';
 import { Counter } from './Components/Counter';
-import HookCounter from './Components/HookCounter';
+import HookCounterTwo from './Components/HookCounterTwo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <HookCounter/>
+      <HookCounterTwo/>
       </header>
     </div>
   );

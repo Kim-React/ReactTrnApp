@@ -7,13 +7,13 @@ import { Counter } from './Components/Counter';
 import HookCounterTwo from './Components/HookCounterTwo';
 import User from './Components/User';
 import Tilesf from './Components/Tilesf';
-import NameCounter from './Components/NameCounter';
+import HookMouse from './Components/HookMouse';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-     <NameCounter/>
+     <HookMouse/>
       </header>
     </div>
   );

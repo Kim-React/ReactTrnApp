@@ -9,7 +9,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter/>
+        <Counter incrementValue="5"/>
+        <Counter incrementValue="10"/>
+        <Counter incrementValue="15"/>
+        <Counter incrementValue="20"/>
       </header>
     </div>
   );

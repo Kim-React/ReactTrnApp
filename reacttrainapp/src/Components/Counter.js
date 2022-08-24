@@ -10,11 +10,9 @@ export class Counter extends Component {
     }
 increment(){
     this.setState({
-        count : this.state.count +1
+        count : this.state.count + Number(this.props.incrementValue)
     });
-    //this.state.count = this.state.count +1 ;// does not reflect in
 }
-
   render() {
     return (
         <>

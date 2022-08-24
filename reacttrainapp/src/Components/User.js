@@ -5,11 +5,11 @@ export default function User() {
 
     function updateFirstName(e){
         const nameValue = e.target.value;
-        setName({firstName:nameValue});
+        setName({...name,firstName:nameValue});
     }
     function updateLastName(e){
         const nameValue = e.target.value;
-        setName({lastName:nameValue});
+        setName({...name,lastName:nameValue});
     }
   return (
     <>

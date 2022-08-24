@@ -6,12 +6,13 @@ import Welcome from './Welcome';
 import { Counter } from './Components/Counter';
 import HookCounterTwo from './Components/HookCounterTwo';
 import User from './Components/User';
+import Tilesf from './Components/Tilesf';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <User />
+      <Tilesf />
       </header>
     </div>
   );

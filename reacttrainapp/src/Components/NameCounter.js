@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 
 export default function NameCounter() {
-    const [count,setCount] = useState(0);
+    const [count,setCount] = useState(2);
     const [name,setName] = useState('john');
 
     function updateName(e){
@@ -15,7 +15,7 @@ export default function NameCounter() {
     useEffect(() => {
        console.log(`effect has ran`);
        document.title = `you clicked ${count} times`;
-    })
+    },[])
     
 
   return (
